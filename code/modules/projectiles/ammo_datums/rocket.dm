@@ -78,6 +78,17 @@
 /datum/ammo/rocket/ltb/drop_nade(turf/T)
 	cell_explosion(T, 200, 45)
 
+/datum/ammo/rocket/ltb/boris // HESH - Boris
+	shell_speed = 3
+	accurate_range = 20
+	max_range = 30
+	penetration = 70
+	sundering = 80
+	damage = 100
+
+/datum/ammo/rocket/ltb/boris/drop_nade(turf/T)
+	cell_explosion(T, 200, 150)
+
 /datum/ammo/bullet/tank_apfds
 	name = "8.8cm APFDS round"
 	icon_state = "apfds"
@@ -105,6 +116,16 @@
 		return
 	proj.proj_max_range = 0 //we don't penetrate past a vehicle
 	proj.damage *= 2.2
+
+/datum/ammo/bullet/apfsds // APFSDS - Boris
+	shell_speed = 5
+	max_range = 50
+	accurate_range = 40
+	penetration = 100
+	damage = 260
+	sundering = 60
+	flags_ammo_behavior = AMMO_PASS_THROUGH_MOVABLE | AMMO_PASS_THROUGH_TURF
+	on_pierce_multiplier = 0.90
 
 /datum/ammo/rocket/heavy_isg
 	name = "15cm round"

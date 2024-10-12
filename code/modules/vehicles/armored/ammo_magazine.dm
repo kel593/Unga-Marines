@@ -21,6 +21,20 @@
 	icon_state = "ltbammo_apfds"
 	default_ammo = /datum/ammo/bullet/tank_apfds
 
+/obj/item/ammo_magazine/tank/knyaz/he // HESH Boris
+	name = "115mm Borisoglebsk HESH shell"
+	caliber = CALIBER_115MM
+	icon_state = "hesh"
+	max_rounds = 1
+	default_ammo = /datum/ammo/rocket/ltb/boris
+
+/obj/item/ammo_magazine/tank/knyaz/ap // APFSDS Boris
+	name = "115mm Svyatoslaw APFSDS shell"
+	caliber = CALIBER_115MM
+	icon_state = "apfsds"
+	max_rounds = 1
+	default_ammo = /datum/ammo/bullet/apfsds
+
 /obj/item/ammo_magazine/tank/ltaap_chaingun
 	name = "\improper LTA-AP chaingun Magazine"
 	desc = "A primary armament chaingun magazine."
@@ -58,6 +72,13 @@
 	w_class = WEIGHT_CLASS_GIGANTIC
 	default_ammo = /datum/ammo/bullet/cupola
 	max_rounds = 75
+
+/obj/item/ammo_magazine/tank/secondary_cupola/boris
+	name = "KPVT MG Magazine"
+	caliber = CALIBER_14X5
+	icon_state = "kpvt"
+	default_ammo = /datum/ammo/bullet/cupola/boris
+	max_rounds = 50
 
 /obj/item/ammo_magazine/tank/secondary_flamer_tank
 	name = "napalm stream tank"

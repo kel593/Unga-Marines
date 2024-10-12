@@ -305,3 +305,18 @@ WEAPONS
 	name = "MLRS High Explosive rocket"
 	input = list(/obj/item/stack/sheet/plasteel = 3, /obj/item/stack/gun_powder = 3) // 24 + 24 points
 	output = list(/obj/item/storage/box/mlrs_rockets = 1) // 33 points from old factory
+
+/datum/assembly_craft/weapons/kpvtmg // KPVT
+	name = "14.5mm KPVT MG Magazine"
+	input = list(/obj/item/stack/sheet/metal = 2, /obj/item/stack/gun_powder = 1)
+	output = list(/obj/item/ammo_magazine/tank/secondary_cupola/boris = 1)
+
+/datum/assembly_craft/weapons/knyaz_apfsds // APFSDS
+	name = "115mm Knyaz Svyatoslaw APFSDS shell"
+	input = list(/obj/item/stack/sheet/mineral/platinum = 5, /obj/item/stack/gun_powder = 5)
+	output = list(/obj/item/ammo_magazine/tank/knyaz/ap = 1)
+
+/datum/assembly_craft/weapons/knyaz_hesh // HESH
+	name = "115mm Knyaz Borisoglebsk HESH shell"
+	input = list(/obj/item/stack/sheet/metal = 5, /obj/item/stack/gun_powder = 10)
+	output = list(/obj/item/ammo_magazine/tank/knyaz/he = 1)

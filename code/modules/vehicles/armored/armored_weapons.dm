@@ -298,6 +298,13 @@
 	chassis = null
 	forceMove(moveto)
 
+/obj/item/armored_weapon/knyaz // Boris tank gun
+	name = "\improper Knyaz 115mm cannon"
+	desc = "A UPP vehicle's main turret cannon. It fires 115mm shells"
+	ammo = /obj/item/ammo_magazine/tank/knyaz/he
+	accepted_ammo = list(/obj/item/ammo_magazine/tank/knyaz/he, /obj/item/ammo_magazine/tank/knyaz/ap)
+	rearm_time = 6 SECONDS // Скорость зарядки одного снаряда для АЗ, есче
+
 /obj/item/armored_weapon/secondary_weapon
 	name = "secondary cupola minigun"
 	desc = "A robotically controlled minigun that spews lead."
@@ -314,6 +321,16 @@
 	rearm_time = 1 SECONDS
 	maximum_magazines = 5
 	hud_state_empty = "rifle_empty"
+
+/obj/item/armored_weapon/secondary_weapon/boris
+	name = "14.5mm KPVT MG"
+	desc = "Modified version of the large-caliber machine gun of the same name for armored and tank weapons and vehicles."
+	fire_sound = 'sound/weapons/guns/fire/kpvt.ogg'
+	windup_sound = 'sound/weapons/guns/interact/working_the_bolt.ogg'
+	ammo = /obj/item/ammo_magazine/tank/secondary_cupola/boris
+	accepted_ammo = list(/obj/item/ammo_magazine/tank/secondary_cupola/boris)
+	windup_delay = 2
+	rearm_time = 3 SECONDS
 
 /obj/item/armored_weapon/ltaap
 	name = "\improper LTA-AP chaingun"

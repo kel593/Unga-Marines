@@ -125,6 +125,24 @@
 	flag_controller = VEHICLE_CONTROL_EQUIPMENT
 	ability_to_grant = /datum/action/vehicle/sealed/armored/zoom
 
+/obj/item/tank_module/ability/zoom/boris // Зум Бориса
+	name = "fire control system"
+	desc = "Allows the shooter to conduct targeted fire at high range with greater accuracy."
+	is_driver_module = FALSE // СУО для стрелка, TODO: сделать так чтоб с этим модулем можно было стрелять в зуме
+	flag_controller = VEHICLE_CONTROL_EQUIPMENT
+
+/obj/item/tank_module/ability/zoom/boris/driver // Зум водителя Бориса
+	name = "advanced optics"
+	desc = "Replaces the mechanical periscope with electronic means of increasing visibility for the driver."
+	is_driver_module = TRUE // Зум для водятла
+	flag_controller = VEHICLE_CONTROL_DRIVE
+
+/obj/item/tank_module/ability/smoke/tanglefoot/boris // Дымы Бориса
+	name = "tanglefoot smoke launchers"
+	desc = "A piece of plastic welded onto the turret to intimidate the enemy. Naturally, IT DOESN'T WORK!!!"
+	icon_state = "tfoot_gas"
+	is_driver_module = FALSE // TODO: прикрутить функционал как ХВХшные дымы но с тенглом а не дымом
+
 /obj/item/tank_module/interior
 	name = "generic interior module"
 	desc = "you shouldnt see this"

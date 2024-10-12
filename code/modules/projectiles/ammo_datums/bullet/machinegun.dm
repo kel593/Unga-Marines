@@ -90,6 +90,16 @@
 	penetration = 10
 	sundering = 1
 
+/datum/ammo/bullet/cupola/boris
+	name = "KPVT bullet"
+	bullet_color = COLOR_LIGHT_ORANGE
+	flags_ammo_behavior = AMMO_BALLISTIC
+	accurate_range = 8
+	damage = 40
+	penetration = 5
+	sundering = 3
+	additional_xeno_penetration = 0.2
+
 /datum/ammo/bullet/sg29
 	name = "smartmachinegun bullet"
 	bullet_color = COLOR_SOFT_RED //Red bullets to indicate friendly fire restriction
