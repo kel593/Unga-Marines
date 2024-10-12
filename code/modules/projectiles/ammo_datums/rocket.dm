@@ -79,15 +79,15 @@
 	cell_explosion(T, 200, 45)
 
 /datum/ammo/rocket/ltb/boris // HESH - Boris
-	shell_speed = 3
-	accurate_range = 20
-	max_range = 30
-	penetration = 70
+	shell_speed = 2
+	accurate_range = 15
+	max_range = 20
+	penetration = 20
 	sundering = 80
-	damage = 100
+	damage = 200
 
 /datum/ammo/rocket/ltb/boris/drop_nade(turf/T)
-	cell_explosion(T, 200, 150)
+	cell_explosion(T, 200, 195)
 
 /datum/ammo/bullet/tank_apfds
 	name = "8.8cm APFDS round"
