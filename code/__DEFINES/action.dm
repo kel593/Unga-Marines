@@ -31,6 +31,8 @@
 // extra define for jab charges
 #define VREF_MUTABLE_JAB "VREF_JAB"
 
+// extra reference for how many boiler acid globs we have
+#define VREF_MUTABLE_AMMO_COUNTER "VREF_AMMO_COUNTER"
 
 /// Actions that toggle on click/trigger
 #define ACTION_TOGGLE "toggle"

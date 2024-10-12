@@ -35,6 +35,8 @@
 	var/windup_delay = 0
 	///scatter of this weapon. in degrees and modified by arm this is attached to
 	var/variance = 0
+	///Can shoot in the zoom
+	var/zoom_fire = FALSE
 	/// since mech guns only get one firemode this is for all types of shots
 	var/projectile_delay = 5 SECONDS
 	/// time between shots in a burst
@@ -304,6 +306,7 @@
 	ammo = /obj/item/ammo_magazine/tank/knyaz/he
 	accepted_ammo = list(/obj/item/ammo_magazine/tank/knyaz/he, /obj/item/ammo_magazine/tank/knyaz/ap)
 	rearm_time = 6 SECONDS // Скорость зарядки одного снаряда для АЗ, есче
+	zoom_fire = TRUE
 
 /obj/item/armored_weapon/secondary_weapon
 	name = "secondary cupola minigun"
@@ -331,6 +334,7 @@
 	accepted_ammo = list(/obj/item/ammo_magazine/tank/secondary_cupola/boris)
 	windup_delay = 2
 	rearm_time = 3 SECONDS
+	zoom_fire = TRUE
 
 /obj/item/armored_weapon/ltaap
 	name = "\improper LTA-AP chaingun"

@@ -219,6 +219,12 @@
 	if(CHECK_BITFIELD(S.smoke_traits, SMOKE_XENO_ACID))
 		take_damage(2 * S.strength, BURN, ACID)
 
+/obj/hitbox/proc/get_projectile_loc(obj/item/armored_weapon/weapon)
+	if(!isarmoredvehicle(root))
+		return loc
+	var/obj/vehicle/sealed/armored/armored_root = root
+	return get_step(src, armored_root.turret_overlay.dir)
+
 ///2x2 hitbox version
 /obj/hitbox/medium
 	bound_width = 64

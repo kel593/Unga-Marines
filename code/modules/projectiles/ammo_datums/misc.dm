@@ -342,6 +342,12 @@
 	bonus_projectile_range = 6
 	bonus_projectile_speed = 2
 
+/datum/ammo/bullet/micro_rail/smoke_burst/tank
+	max_range = 3
+	bonus_projectiles_type = /datum/ammo/smoke_burst/tank
+	bonus_projectile_quantity = 5
+	bonus_projectiles_scatter = 30
+
 //submunitions for micro grenades
 /datum/ammo/bullet/micro_rail_spread
 	name = "Shrapnel"
@@ -455,7 +461,7 @@
 	max_range = 6
 	bullet_color = COLOR_VERY_SOFT_YELLOW
 	/// smoke type created when the projectile detonates
-	var/datum/effect_system/smoke_spread/smoketype = /datum/effect_system/smoke_spread/bad
+	var/datum/effect_system/smoke_spread/smoketype = /datum/effect_system/smoke_spread/plasmaloss
 	///radius this smoke will encompass
 	var/smokeradius = 1
 
@@ -510,3 +516,7 @@
 	damage = 1
 	drain_multiplier = 0.03
 	plasma_drain = 15
+
+/datum/ammo/smoke_burst/tank
+	max_range = 7
+	smokeradius = 2

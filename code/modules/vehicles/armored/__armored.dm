@@ -648,7 +648,7 @@
 		selected = primary_weapon
 	if(!selected)
 		return
-	if(weapons_safety || zoom_mode)
+	if((weapons_safety || zoom_mode )&& !selected.zoom_fire)
 		return
 	INVOKE_ASYNC(selected, TYPE_PROC_REF(/obj/item/armored_weapon, begin_fire), user, target, modifiers)
 

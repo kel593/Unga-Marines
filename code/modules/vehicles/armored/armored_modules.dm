@@ -139,9 +139,10 @@
 
 /obj/item/tank_module/ability/smoke/tanglefoot/boris // Дымы Бориса
 	name = "tanglefoot smoke launchers"
-	desc = "A piece of plastic welded onto the turret to intimidate the enemy. Naturally, IT DOESN'T WORK!!!"
+	desc = "Allows the gunner to launch a tanglefloot smokescrean in front of the tank"
 	icon_state = "tfoot_gas"
 	is_driver_module = FALSE // TODO: прикрутить функционал как ХВХшные дымы но с тенглом а не дымом
+	ability_to_grant = /datum/action/vehicle/sealed/armored/smoke_screen
 
 /obj/item/tank_module/interior
 	name = "generic interior module"
